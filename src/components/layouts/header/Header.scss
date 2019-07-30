@@ -1,0 +1,16 @@
+.Header {
+  header {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1888a5;
+    color: white !important;
+
+    h5 {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
