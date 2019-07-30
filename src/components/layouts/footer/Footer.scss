@@ -1,0 +1,14 @@
+@import "../../../styles/theme";
+
+.Footer {
+  footer {
+    height: 100px;
+    display: flex;
+    font-family: $primary-font;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1888a5;
+    color: white !important;
+  }
+}
