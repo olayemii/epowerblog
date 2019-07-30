@@ -9,7 +9,7 @@ function Header(props) {
     <div className="Header">
       <header className="Header">
         <h1>{title}</h1>
-        {subtitle && <h5>PUBLISHED ON {subtitle}</h5>}
+        {subtitle && <h5> {subtitle}</h5>}
       </header>
     </div>
   );

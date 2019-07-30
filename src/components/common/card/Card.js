@@ -2,21 +2,17 @@ import React from "react";
 
 import "./Card.css";
 
-function Card() {
+function Card(props) {
+  let { title, thumbnail, excerpt, onClick } = props;
   return (
-    <div className="Card">
+    <div className="Card" onClick={onClick}>
       <div className="card-body">
         <div className="card-image">
-          <img src="https://picsum.photos/200" alt="" />
+          <img src={thumbnail} alt="" />
         </div>
         <div className="card-text">
-          <div className="card-title">Lorem Ipsum</div>
-          <p className="card-subtitle">
-            Ad ipsum cillum aute labore id enim dolor. Laboris enim nostrud non
-            aliquip nostrud et esse dolore excepteur non. Nostrud magna sint
-            quis proident officia ut consectetur et nulla. Dolor commodo do aute
-            eu.
-          </p>
+          <div className="card-title">{title}</div>
+          <p className="card-subtitle">{excerpt}</p>
         </div>
       </div>
     </div>

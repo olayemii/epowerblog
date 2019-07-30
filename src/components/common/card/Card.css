@@ -10,6 +10,7 @@
   margin: 15px 0;
   -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .Card .card-image img {

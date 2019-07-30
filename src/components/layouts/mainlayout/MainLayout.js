@@ -5,10 +5,10 @@ import Footer from "../footer/Footer";
 import "./MainLayout.css";
 
 function MainLayout(props) {
-  let { children } = props;
+  let { children, headerTitle, headerSubTitle } = props;
   return (
     <div className="MainLayout">
-      <Header />
+      <Header title={headerTitle} subtitle={headerSubTitle} />
       <main>{children}</main>
       <Footer />
     </div>
