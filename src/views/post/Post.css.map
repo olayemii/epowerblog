@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AACE,KADG,CACH,QAAQ,CAAC;EACP,OAAO,EAAE,SAAS;CACnB",
     "sources": [
         "Post.scss"
     ],
