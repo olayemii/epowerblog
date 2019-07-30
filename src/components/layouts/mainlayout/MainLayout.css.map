@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,WADS,CACT,IAAI,CAAC;EACH,UAAU,EAAE,mBAAmB;CAChC",
+    "sources": [
+        "MainLayout.scss"
+    ],
+    "names": [],
+    "file": "MainLayout.css"
+}

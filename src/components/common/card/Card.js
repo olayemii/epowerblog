@@ -15,8 +15,7 @@ function Card() {
             Ad ipsum cillum aute labore id enim dolor. Laboris enim nostrud non
             aliquip nostrud et esse dolore excepteur non. Nostrud magna sint
             quis proident officia ut consectetur et nulla. Dolor commodo do aute
-            eu. Mollit excepteur tempor laborum quis amet Lorem nisi et
-            consectetur velit elit.
+            eu.
           </p>
         </div>
       </div>

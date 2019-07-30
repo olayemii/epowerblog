@@ -1,26 +1,18 @@
 import React from "react";
-import { Header, Card } from "./components";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import "./App.css";
-import Footer from "./components/layouts/footer/Footer";
+import Home from "./views/home/Home";
+import Post from "./views/post/Post";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className="dgrid news-grid">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
-      <div className="pagination">
-        <button>Previous</button>
-        <button>Next</button>
-      </div>
-      <Footer />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/post/:id" component={Post} />
+        </Switch>
+      </Router>
     </div>
   );
 }
