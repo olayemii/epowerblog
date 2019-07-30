@@ -1,10 +1,29 @@
 .dgrid.news-grid {
   display: grid;
   width: 70%;
-  margin: 100px auto;
+  margin: 0 auto;
+  margin-top: 100px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-row-gap: 10px;
   grid-column-gap: 50px;
   align-items: center;
   justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > button {
+  padding: 20px;
+  width: 150px;
+  border-radius: 18px;
+  border: none;
+  margin: 0px 50px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  cursor: pointer;
+  background: #1888a5;
+  color: white;
 }

@@ -16,6 +16,10 @@ function App() {
         <Card />
         <Card />
       </div>
+      <div className="pagination">
+        <button>Previous</button>
+        <button>Next</button>
+      </div>
       <Footer />
     </div>
   );

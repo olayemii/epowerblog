@@ -1,2 +1,2 @@
-export { Header } from "./layouts";
+export { Header, Footer } from "./layouts";
 export { Card } from "./common";
