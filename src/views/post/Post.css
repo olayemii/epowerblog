@@ -3,8 +3,19 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 680px) {
+  .Post .post-content {
+    width: 100%;
+  }
+}
+
 .Post .post-content .content {
   padding: 50px 20px;
+}
+
+.Post .post-content .content img {
+  width: 100%;
+  height: 100%;
 }
 
 .Post .post-content .post-image {

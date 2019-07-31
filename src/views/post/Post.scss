@@ -2,8 +2,15 @@
   .post-content {
     width: 70%;
     margin: 0 auto;
+    @media screen and (max-width: 680px) {
+      width: 100%;
+    }
     .content {
       padding: 50px 20px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .post-image {
