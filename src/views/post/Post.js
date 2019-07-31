@@ -4,7 +4,10 @@ import axios from "axios";
 import "./Post.css";
 function Post(props) {
   const [currPost, setCurrPost] = useState(null);
-  useEffect(() => getPostBySlug(props.match.params.postid), []);
+  useEffect(
+    () => getPostBySlug(props.match.params && props.match.params.postid),
+    [props]
+  );
 
   const getPostBySlug = slug => {
     setCurrPost(null);
@@ -28,10 +31,15 @@ function Post(props) {
       >
         {currPost ? (
           currPost.content && (
-            <div
-              className="content"
-              dangerouslySetInnerHTML={{ __html: currPost.content.rendered }}
-            />
+            <div className="post-content">
+              <div className="post-image">
+                <img src={currPost.featured_image} alt="" />
+              </div>
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: currPost.content.rendered }}
+              />
+            </div>
           )
         ) : (
           <div>Loading. . .</div>

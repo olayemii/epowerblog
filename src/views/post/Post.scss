@@ -1,5 +1,18 @@
 .Post {
-  .content {
-    padding: 50px 20px;
+  .post-content {
+    width: 70%;
+    margin: 0 auto;
+    .content {
+      padding: 50px 20px;
+    }
+
+    .post-image {
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
   }
 }

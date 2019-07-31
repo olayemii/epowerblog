@@ -6,16 +6,17 @@ import "./Home.css";
 function Home(props) {
   const [page, setPage] = useState(1);
   const [records, setRecords] = useState(null);
+  const [totalpages, setTotalPages] = useState(null);
   useEffect(() => {
     getPagePost(page);
-  }, [page]);
+  }, []);
 
   const getPagePost = page => {
     setRecords(null);
     axios
       .get(`https://epower.ng/wp-json/wp/v2/posts?page=${page}&per_page=6`)
       .then(res => {
-        console.log(res.data);
+        setTotalPages(parseInt(res.headers["x-wp-totalpages"], 10));
         setRecords(res.data);
       })
       .catch(err => alert("Error fetching posts"));
@@ -28,7 +29,7 @@ function Home(props) {
             <div className="dgrid news-grid">
               {records.map(record => (
                 <Card
-                  onClick={() => props.history.push(`/post/${record.slug}`)}
+                  onClick={() => props.history.push(`/${record.slug}`)}
                   title={record.title && record.title.rendered}
                   thumbnail={record.featured_image_thumbnail}
                   excerpt={record.excerpt && record.excerpt.rendered}
@@ -44,7 +45,13 @@ function Home(props) {
               >
                 Previous
               </button>
-              <button onClick={() => setPage(page + 1)}>Next</button>
+              <button
+                disabled={page === totalpages}
+                className={page === totalpages ? "disabled-cursor" : ""}
+                onClick={() => setPage(page + 1)}
+              >
+                Next
+              </button>
             </div>
           </Fragment>
         ) : (

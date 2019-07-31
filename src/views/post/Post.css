@@ -1,4 +1,20 @@
-.Post .content {
+.Post .post-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.Post .post-content .content {
   padding: 50px 20px;
+}
+
+.Post .post-content .post-image {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.Post .post-content .post-image img {
+  width: 100%;
 }
 /*# sourceMappingURL=Post.css.map */

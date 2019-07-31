@@ -1,6 +1,7 @@
 .Header {
   header {
-    height: 200px;
+    min-height: 200px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;

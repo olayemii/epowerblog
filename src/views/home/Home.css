@@ -43,5 +43,6 @@
 
 .disabled-cursor {
   cursor: not-allowed !important;
+  background: #b7bec0 !important;
 }
 /*# sourceMappingURL=Home.css.map */
