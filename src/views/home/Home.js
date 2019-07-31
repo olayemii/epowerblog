@@ -9,7 +9,7 @@ function Home(props) {
   const [totalpages, setTotalPages] = useState(null);
   useEffect(() => {
     getPagePost(page);
-  }, []);
+  }, [page]);
 
   const getPagePost = page => {
     setRecords(null);
